@@ -30,6 +30,7 @@
   text-align: right;
   vertical-align: top;
 }
+
 .left{
   float:left;
 }
@@ -41,4 +42,19 @@
   margin: 0 auto;
   text-align: center;
   width: 60%;
+
+}
+.container{
+  width:85%;
+}
+body{
+  background-color: grey;
+}
+.list-group-item{
+  clear:both;
+  background-color: lightgrey;
+}
+.list-group-item:hover{
+  clear:both;
+  background-color: darkgrey;
 }

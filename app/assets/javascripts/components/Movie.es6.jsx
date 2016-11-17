@@ -13,7 +13,7 @@ class Movie extends React.Component {
   render(){
     var movie = this.props.data;
     return (
-      <div className='singleMovie'>
+      <section className='singleMovie redBackground'>
         <ul className='list-group'>
           <li className='list-group-item'>
             <div className='left'><img className='smallpicture' src={movie.Poster}/>
@@ -22,7 +22,7 @@ class Movie extends React.Component {
             <p className='right'>Aired in: {movie.Year}</p>
           </li>
         </ul>
-      </div>
+      </section>
     )
   }
 }

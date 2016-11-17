@@ -21,7 +21,7 @@ class App extends React.Component {
   render(){
 
     return (
-      <div>
+      <div className='body'>
         <h2 className="header123">Movie Database</h2>
 
         <SearchForm onSearch={this.updateMovie.bind(this)}/>
