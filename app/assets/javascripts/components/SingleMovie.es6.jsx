@@ -1,7 +1,8 @@
 class SingleMovie extends React.Component {
   render(){
     var movie = this.props.data;
-    if ("Title" in movie){
+    debugger
+    if (movie){
       return (
         <div className='singleMovie'>
           <h1>{movie.Title}</h1>

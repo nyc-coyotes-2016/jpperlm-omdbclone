@@ -8,7 +8,7 @@ class App extends React.Component {
   updateMovie(movies){
     this.setState({
       movies: [movies],
-      singleMovie: {}
+      singleMovie: undefined
     })
   }
 
