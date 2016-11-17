@@ -17,13 +17,15 @@ class SearchForm extends React.Component {
 
   render(){
     return (
-      <form id="search-form" onSubmit={this.handleSubmit.bind(this)}>
-        <input ref='searchKeyword' id="search" type="text" name="query"/>
-        <select ref = 'typeKeyword' name="type">
-          <option value="movie">movie</option>
-          <option value="series">series</option>
-          <option value="episode">episode</option>
-        </select>
+      <form className="navbar-form center" role="search" id="search-form" onSubmit={this.handleSubmit.bind(this)}>
+        <div className="form-group">
+          <input className="form-control" placeholder='Search Key Word/Title' ref='searchKeyword' id="search" type="text" name="query"/>
+          <select className="form-control" ref = 'typeKeyword' name="type">
+            <option value="movie">movie</option>
+            <option value="series">series</option>
+            <option value="episode">episode</option>
+          </select>
+        </div>
       </form>
     )
   }

@@ -22,11 +22,9 @@ class App extends React.Component {
 
     return (
       <div>
-        <header id="top-nav">
-          <div id="brand">Search Movie</div>
-          <SearchForm onSearch={this.updateMovie.bind(this)}/>
-          <i className="fa fa-search"></i>
-        </header>
+        <h2 className="header123">Movie Database</h2>
+
+        <SearchForm onSearch={this.updateMovie.bind(this)}/>
         <section className="singleMovieContainer">
           <SingleMovie data={this.state.singleMovie}/>
         </section>

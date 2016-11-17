@@ -14,9 +14,13 @@ class Movie extends React.Component {
     var movie = this.props.data;
     return (
       <div className='singleMovie'>
-        <ul>
-          <li><h1><a onClick={this.handleClick.bind(this)}>{movie.Title}</a></h1></li>
-          <li>Aired in: {movie.Year}</li>
+        <ul className='list-group'>
+          <li className='list-group-item'>
+            <div className='left'><img className='smallpicture' src={movie.Poster}/>
+</div>
+            <a onClick={this.handleClick.bind(this)}><h4><div className='right'>{movie.Title}</div></h4></a>
+            <p className='right'>Aired in: {movie.Year}</p>
+          </li>
         </ul>
       </div>
     )
