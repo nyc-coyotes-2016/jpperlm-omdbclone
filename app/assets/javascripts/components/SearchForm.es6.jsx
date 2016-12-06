@@ -25,6 +25,7 @@ class SearchForm extends React.Component {
             <option value="series">series</option>
             <option value="episode">episode</option>
           </select>
+          <input className="form-control" placeholder='Search!' type="submit" value='Search!' />
         </div>
       </form>
     )
