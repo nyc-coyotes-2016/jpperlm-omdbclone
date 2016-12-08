@@ -3,6 +3,7 @@
 
 ## Coded By
 * [Jason Perlman](https://github.com/jpperlm)
+
 ## Technologies
 * Ruby on Rails
 * React
